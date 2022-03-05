@@ -1,5 +1,7 @@
 # Flux Playground
 
+* [Flux](https://fluxcd.io/docs/) version: 0.26.3
+
 * Bootstrap Flux for staging/production (set `kubectl` context `flux-staging` and `flux-prod` in `~/.kube`):
 
 ```console
