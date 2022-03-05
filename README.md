@@ -7,6 +7,8 @@ $ flux bootstrap github --context=flux-staging --owner=${GITHUB_USER} --reposito
 $ flux bootstrap github --context=flux-prod --owner=${GITHUB_USER} --repository=flux-playground --branch=main --personal --path=clusters/prod
 ```
 
+It will commit the component and sync manifests in `clusters/{staging,prod}/flux-system/` directory and create a deploy key with read-only access on GitHub in order to pull changes inside the corresponding cluster.
+
 * List HelmRelease objects:
 
 ```console
