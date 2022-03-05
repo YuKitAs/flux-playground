@@ -20,3 +20,9 @@ $ flux get helmreleases --all-namespaces
 ```console
 $ flux get kustomizations -w
 ```
+
+* Clean up Flux components, custom resources and namespace:
+
+```console
+$ flux uninstall --namespace=flux-system [--dry-run]
+```
